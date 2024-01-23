@@ -29,7 +29,7 @@ Route.get('health', async ({ response }) => {
   return report.healthy ? response.ok(report) : response.badRequest(report)
 })
 
-Route.get('/', () => ({ server: 'MV Consultoria API' }))
+Route.get('/', () => ({ server: 'API' }))
 
 Route.group(() => {
   Route.post('login', 'SessionsController.login').as('login')
